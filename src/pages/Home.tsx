@@ -39,7 +39,7 @@ export default function Home() {
           <div className="mini-card">
             <h3>Currently looking for</h3>
             <p className="muted">
-              Front and back endinternships, co op roles, or junior developer
+              Front and back end internships, co op roles, or junior developer
               opportunities.
             </p>
           </div>
