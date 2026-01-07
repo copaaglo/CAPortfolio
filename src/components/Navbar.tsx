@@ -4,7 +4,10 @@ export default function Navbar() {
   return (
     <header className="header">
       <div className="container header-inner">
-        <div className="brand"></div>
+        <NavLink to="/" className="brand">
+          <span className="brand-dot"></span>
+          Conrado Aguilar
+        </NavLink>
 
         <nav className="nav">
           <NavLink

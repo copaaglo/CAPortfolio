@@ -8,48 +8,45 @@ export default function Home() {
   return (
     <section className="stack">
       <div className="hero">
-        <h1> Conrado Aguilar Lopez </h1>
+        <h1>Conrado Aguilar</h1>
 
         <p className="muted">
-          Computer Engineering student with a strong interest in front end
-          development and building clean, user focused interfaces.
+          Computer Engineering student specializing in front-end
+          development and crafting high-performance, accessible web interfaces.
         </p>
 
         <div className="row">
           <Link className="btn" to="/resume">
-            Resume
+            View Resume
           </Link>
           <Link className="btn btn-outline" to="/projects">
-            View Projects
-          </Link>
-          <Link className="btn btn-outline" to="/contact">
-            Contact
+            Explore Projects
           </Link>
         </div>
 
         <div className="mini-grid">
           <div className="mini-card">
-            <h3>What I enjoy working on</h3>
+            <h3>Core Competencies</h3>
             <p className="muted">
-              Front end development, problem solving, and turning ideas into
-              usable software.
+              Advanced React patterns, TypeScript architecture, and modern 
+              design systems that scale with user needs.
             </p>
           </div>
 
           <div className="mini-card">
-            <h3>Currently looking for</h3>
+            <h3>Professional Focus</h3>
             <p className="muted">
-              Front and back end internships, co op roles, or junior developer
-              opportunities.
+              Seeking engineering roles where I can contribute to 
+              complex product challenges and user-centric features.
             </p>
           </div>
         </div>
       </div>
 
       <div className="section-head">
-        <h2>Featured Project</h2>
+        <h2>Featured Work</h2>
         <Link to="/projects" className="link">
-          See all →
+          View all projects →
         </Link>
       </div>
 
