@@ -13,7 +13,7 @@ export const projects: Project[] = [
 
       "A custom 8-bit CPU designed and simulated from scratch as part of a computer architecture project.",
 
-    tech: ["VHDL", "Digital Logic", "FSMs", "Quartus II"],
+    tech: ["VHDL", "Digital Logic", "FSM", "Quartus II"],
 
     highlights: [
       "Designed the core CPU components including the ALU and control logic",
