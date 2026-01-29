@@ -13,13 +13,13 @@ export default function Contact() {
           feel free to reach out.
         </p>
 
-        <div className="row">
-          <a className="btn" href={mailtoLink}>
+        <div className="row center">
+          <a className="btn btn-pill" href={mailtoLink}>
             Email
           </a>
 
           <a
-            className="btn btn-outline"
+            className="btn btn-pill btn-pill-outline"
             href="https://www.linkedin.com/in/conrado-aguilarlopez/"
             target="_blank"
             rel="noreferrer"

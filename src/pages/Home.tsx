@@ -16,11 +16,11 @@ export default function Home() {
           interfaces.
         </p>
 
-        <div className="row">
-          <Link className="btn" to="/resume">
+        <div className="row center">
+          <Link className="btn btn-pill" to="/resume">
             View Resume
           </Link>
-          <Link className="btn btn-outline" to="/projects">
+          <Link className="btn btn-pill btn-pill-outline" to="/projects">
             Explore Projects
           </Link>
         </div>
