@@ -22,7 +22,7 @@ export default function App() {
     <div className="app">
       <Navbar />
 
-      <main className="container">
+      <div className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -31,9 +31,8 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
-      </main>
-
-      <Footer />
+        <Footer />
+      </div>
     </div>
   );
 }

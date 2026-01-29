@@ -8,14 +8,13 @@ export default function Home() {
   return (
     <section className="stack">
       <div className="hero">
-        <h1>Conrado Aguilar</h1>
+        <h1>Conrado<br />Aguilar</h1>
 
         <p className="muted">
-          Computer Engineering student specializing in front-end
-          development and crafting high-performance, accessible web interfaces.
+          Computer Engineering student specializing in high-performance web architecture, accessible UI/UX design, and complex product engineering.
         </p>
 
-        <div className="row">
+        <div className="row" style={{ justifyContent: 'flex-start', margin: '0' }}>
           <Link className="btn" to="/resume">
             View Resume
           </Link>
@@ -23,31 +22,10 @@ export default function Home() {
             Explore Projects
           </Link>
         </div>
-
-        <div className="mini-grid">
-          <div className="mini-card">
-            <h3>Core Competencies</h3>
-            <p className="muted">
-              Advanced React patterns, TypeScript architecture, and modern 
-              design systems that scale with user needs.
-            </p>
-          </div>
-
-          <div className="mini-card">
-            <h3>Professional Focus</h3>
-            <p className="muted">
-              Seeking engineering roles where I can contribute to 
-              complex product challenges and user-centric features.
-            </p>
-          </div>
-        </div>
       </div>
 
-      <div className="section-head">
-        <h2>Featured Work</h2>
-        <Link to="/projects" className="link">
-          View all projects →
-        </Link>
+      <div className="section-head" style={{ border: 'none', padding: '0', margin: '0' }}>
+        <h2 style={{ fontSize: '1.5rem', color: 'var(--secondary)' }}>Featured Work</h2>
       </div>
 
       <div className="grid">
