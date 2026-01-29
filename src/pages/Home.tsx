@@ -11,21 +11,21 @@ export default function Home() {
         <h1>Conrado<br />Aguilar</h1>
 
         <p className="muted">
-          Computer Engineering student specializing in high-performance web architecture, accessible UI/UX design, and complex product engineering.
+          Computer Engineering student specializing in high-performance architecture and elegant digital experiences.
         </p>
 
-        <div className="row" style={{ justifyContent: 'flex-start', margin: '0' }}>
+        <div className="row" style={{ justifyContent: 'flex-start', margin: '24px 0 0' }}>
           <Link className="btn" to="/resume">
-            View Resume
+            Resume
           </Link>
           <Link className="btn btn-outline" to="/projects">
-            Explore Projects
+            Projects
           </Link>
         </div>
       </div>
 
       <div className="section-head" style={{ border: 'none', padding: '0', margin: '0' }}>
-        <h2 style={{ fontSize: '1.5rem', color: 'var(--secondary)' }}>Featured Work</h2>
+        <h2 style={{ fontSize: '0.9rem', fontWeight: '700', color: 'var(--secondary)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Selected Works</h2>
       </div>
 
       <div className="grid">

@@ -11,15 +11,22 @@ import Contact from "./pages/Contact";
 
 export default function App() {
   useEffect(() => {
-    // Inject JetBrains Mono from Google Fonts
+    // Inject Instrument Sans from Google Fonts
     const link = document.createElement('link');
-    link.href = 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap';
+    link.href = 'https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;800&display=swap';
     link.rel = 'stylesheet';
     document.head.appendChild(link);
+    
+    // Set default dark theme
+    if (!localStorage.getItem("theme")) {
+      document.documentElement.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
+    }
   }, []);
 
   return (
     <div className="app">
+      <div className="noise-overlay"></div>
       <Navbar />
 
       <div className="main-content">
