@@ -11,19 +11,24 @@ import Contact from "./pages/Contact";
 
 export default function App() {
   useEffect(() => {
-    // Inject Inter from Google Fonts
+    // Inject Instrument Sans & Inter from Google Fonts
     const link = document.createElement('link');
-    link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap';
+    link.href = 'https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap';
     link.rel = 'stylesheet';
     document.head.appendChild(link);
     
-    // Default theme light as per screenshot
-    document.documentElement.setAttribute("data-theme", "light");
-    localStorage.setItem("theme", "light");
+    // Default to dark theme for that sleek repo vibe
+    if (!localStorage.getItem("theme")) {
+      document.documentElement.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.setAttribute("data-theme", localStorage.getItem("theme")!);
+    }
   }, []);
 
   return (
     <div className="app">
+      <div className="noise-overlay"></div>
       <Navbar />
 
       <main className="container">
