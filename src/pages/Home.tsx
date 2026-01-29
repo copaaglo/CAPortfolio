@@ -53,7 +53,9 @@ export default function Home() {
 
       <div className="grid">
         {featuredProjects.map((project) => (
-          <ProjectCard key={project.title} project={project} />
+          <div key={project.title} className="project-wrapper">
+            <ProjectCard project={project} />
+          </div>
         ))}
       </div>
     </section>
