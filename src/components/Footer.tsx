@@ -6,6 +6,15 @@ export default function Footer() {
 
         <div className="footer-links" style={{ display: 'flex', gap: '20px' }}>
           <a
+            href="https://github.com/copaaglo"
+            className="link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+
+          <a
             href="https://www.linkedin.com/in/conrado-aguilarlopez/"
             className="link"
             target="_blank"
