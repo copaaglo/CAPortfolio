@@ -4,6 +4,7 @@ export type Project = {
   tech: string[];
   highlights: string[];
   liveUrl?: string;
+  isHardware?: boolean;
 };
 
 export const projects: Project[] = [
@@ -40,5 +41,17 @@ export const projects: Project[] = [
       "Designed a modular UI using component-based architecture, props, and state, allowing sections such as projects, contact, and about pages to scale cleanly as content grows.",
       "Deployed and maintained the site using Vercel and Git-based workflows, ensuring a continuously updated, in alignment with industry practices.",
     ],
+  },
+  {
+    title: "8-bit CPU Design",
+    description:
+      "A custom 8-bit CPU designed and simulated from scratch as part of a computer architecture project.",
+    tech: ["VHDL", "Digital Logic", "FSM", "Quartus II"],
+    highlights: [
+      "Designed the core CPU components including the ALU and control logic",
+      "Used a finite state machine to manage instruction execution",
+      "Tested and validated the design through simulation",
+    ],
+    isHardware: true,
   },
 ];

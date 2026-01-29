@@ -117,6 +117,24 @@ main.container { flex: 1; padding: 160px 0 80px; }
   gap: 32px;
 }
 
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 48px;
+}
+
+.bullets {
+  list-style: disc;
+  padding-left: 20px;
+  color: var(--secondary);
+  line-height: 1.8;
+}
+
+.hardware-project-section {
+  margin-top: 32px;
+}
+
 @media (max-width: 850px) {
   .grid {
     grid-template-columns: 1fr;
