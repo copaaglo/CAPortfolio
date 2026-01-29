@@ -7,6 +7,15 @@ type Props = {
 export default function ProjectCard({ project }: Props) {
   return (
     <article className="card">
+      {project.imageUrl && (
+        <div style={{ padding: '24px 24px 0 24px' }}>
+          <img 
+            src={project.imageUrl} 
+            alt={project.title} 
+            style={{ width: '100%', borderRadius: '12px', border: '1px solid var(--border)', display: 'block' }} 
+          />
+        </div>
+      )}
       <div className="card-body">
         <h3 className="card-title">{project.title}</h3>
         <p className="card-desc">{project.description}</p>

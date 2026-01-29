@@ -5,6 +5,7 @@ export type Project = {
   tech: string[];
   highlights: string[];
   liveUrl?: string;
+  imageUrl?: string;
   isHardware?: boolean;
 };
 
@@ -19,6 +20,8 @@ export const projects: Project[] = [
       "Built an automated ticket aggregation system by scraping SeatGeek and Ticketmaster using Python, resulting in a unified dataset that highlights the cheapest event prices across platforms.",
       "Designed a modular backend using structured scraper classes and request parsing, resulting in scalable data collection for concerts and sports events.",
     ],
+    liveUrl: "https://1874ae15-dad3-4549-b219-378c395cda26-00-19iv1qhgg1etn.picard.replit.dev",
+    imageUrl: "/images/web-scraper-preview.png",
   },
   {
     title: "Restaurant Discovery App",
