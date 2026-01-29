@@ -11,25 +11,22 @@ import Contact from "./pages/Contact";
 
 export default function App() {
   useEffect(() => {
-    // Inject Instrument Sans from Google Fonts
+    // Inject Inter from Google Fonts
     const link = document.createElement('link');
-    link.href = 'https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;800&display=swap';
+    link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap';
     link.rel = 'stylesheet';
     document.head.appendChild(link);
     
-    // Set default dark theme
-    if (!localStorage.getItem("theme")) {
-      document.documentElement.setAttribute("data-theme", "dark");
-      localStorage.setItem("theme", "dark");
-    }
+    // Default theme light as per screenshot
+    document.documentElement.setAttribute("data-theme", "light");
+    localStorage.setItem("theme", "light");
   }, []);
 
   return (
     <div className="app">
-      <div className="noise-overlay"></div>
       <Navbar />
 
-      <div className="main-content">
+      <main className="container">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -38,8 +35,9 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
-        <Footer />
-      </div>
+      </main>
+
+      <Footer />
     </div>
   );
 }
