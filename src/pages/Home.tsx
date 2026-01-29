@@ -29,16 +29,16 @@ export default function Home() {
           <div className="mini-card">
             <h3>Core Competencies</h3>
             <p className="muted">
-              Advanced React patterns, TypeScript architecture, and
-              modern design systems that scale with user needs.
+              Full-stack development with Python, React, and Node.js. Expertise in hardware-level 
+              programming (VHDL) and digital systems design.
             </p>
           </div>
 
           <div className="mini-card">
             <h3>Professional Focus</h3>
             <p className="muted">
-              Seeking engineering roles where I can contribute to
-              complex product challenges and user-centric features.
+              Building scalable automation tools and high-performance software 
+              interfaces. Seeking roles in hardware-software integration and full-stack engineering.
             </p>
           </div>
         </div>
