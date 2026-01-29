@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import ProjectCard from "../components/ProjectCard";
 import { projects } from "../data/projects";
 
 export default function Home() {
@@ -53,8 +52,18 @@ export default function Home() {
 
       <div className="grid">
         {featuredProjects.map((project) => (
-          <div key={project.title} className="project-wrapper">
-            <ProjectCard project={project} />
+          <div key={project.title} className="card project-preview">
+            <h3>{project.title}</h3>
+            <p className="muted" style={{ fontSize: '0.95rem', margin: '16px 0' }}>
+              {project.summary || project.description}
+            </p>
+            <div className="pill-row" style={{ marginBottom: '24px' }}>
+              {project.tech.slice(0, 3).map(t => <span key={t} className="pill">{t}</span>)}
+              {project.tech.length > 3 && <span className="pill">+{project.tech.length - 3}</span>}
+            </div>
+            <Link to="/projects" className="link" style={{ fontSize: '0.85rem' }}>
+              Learn more →
+            </Link>
           </div>
         ))}
       </div>

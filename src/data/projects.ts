@@ -1,6 +1,7 @@
 export type Project = {
   title: string;
   description: string;
+  summary?: string;
   tech: string[];
   highlights: string[];
   liveUrl?: string;
@@ -12,6 +13,7 @@ export const projects: Project[] = [
     title: "Ticket Prices Web Scraper",
     description:
       "An automated ticket aggregation system that scrapes SeatGeek and Ticketmaster to highlight the cheapest event prices across platforms.",
+    summary: "Automated aggregation system for SeatGeek and Ticketmaster, highlighting the cheapest event prices across platforms using Python and Flask.",
     tech: ["Python", "Flask", "API", "Automation", "Vercel"],
     highlights: [
       "Built an automated ticket aggregation system by scraping SeatGeek and Ticketmaster using Python, resulting in a unified dataset that highlights the cheapest event prices across platforms.",
@@ -22,6 +24,7 @@ export const projects: Project[] = [
     title: "Restaurant Discovery App",
     description:
       "A cross-platform mobile app enabling a swipe-based algorithm for restaurants powered by real-time location.",
+    summary: "Cross-platform mobile app with a swipe-based algorithm for real-time restaurant discovery powered by geolocation and LLMs.",
     tech: ["React Native", "Expo", "TypeScript", "Node.js", "API", "LLM"],
     highlights: [
       "Developing and finalizing a cross-platform mobile app using React Native, Expo, and Expo Router, enabling a swipe-based algorithm for restaurants powered by the user's real-time location.",
