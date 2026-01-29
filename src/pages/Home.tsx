@@ -11,9 +11,8 @@ export default function Home() {
         <h1>Conrado Aguilar</h1>
 
         <p className="muted">
-          Computer Engineering student specializing in front-end
-          development and crafting high-performance, accessible web
-          interfaces.
+          Computer Engineering Student at Toronto Metropolitan University |
+          Seeking for co-op opportunities in the software development field
         </p>
 
         <div className="row center">
@@ -29,16 +28,17 @@ export default function Home() {
           <div className="mini-card">
             <h3>Core Competencies</h3>
             <p className="muted">
-              Full-stack development with Python, React, and Node.js. Expertise in hardware-level 
-              programming (VHDL) and digital systems design.
+              Full-stack development with Python, React, and Node.js. Expertise
+              in hardware-level programming (VHDL) and digital systems design.
             </p>
           </div>
 
           <div className="mini-card">
             <h3>Professional Focus</h3>
             <p className="muted">
-              Building scalable automation tools and high-performance software 
-              interfaces. Seeking roles in hardware-software integration and full-stack engineering.
+              Building scalable automation tools and high-performance software
+              interfaces. Seeking roles in hardware-software integration and
+              full-stack engineering.
             </p>
           </div>
         </div>

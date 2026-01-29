@@ -105,9 +105,9 @@ main.container { flex: 1; padding: 160px 0 80px; }
 .hero h1 { font-size: 5rem; margin: 0; letter-spacing: -0.06em; font-weight: 800; line-height: 0.9; }
 .hero p { font-size: 1.25rem; max-width: 700px; margin: 0 auto; color: var(--secondary); line-height: 1.5; }
 
-.mini-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 64px; }
-@media (max-width: 750px) { .mini-grid { grid-template-columns: 1fr; } .hero h1 { font-size: 3.5rem; } }
-.mini-card { border: 1px solid var(--border); border-radius: var(--radius); padding: 48px 40px; text-align: left; background: var(--card-bg); min-height: 280px; display: flex; flex-direction: column; justify-content: center; }
+.mini-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 64px; align-items: stretch; }
+.mini-grid-full { display: flex; justify-content: center; margin-top: 24px; }
+.mini-card { border: 1px solid var(--border); border-radius: var(--radius); padding: 48px 40px; text-align: left; background: var(--card-bg); display: flex; flex-direction: column; justify-content: flex-start; height: 100%; }
 .mini-card h3 { margin: 0 0 16px; font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; }
 .mini-card p { font-size: 1.1rem; line-height: 1.6; }
 

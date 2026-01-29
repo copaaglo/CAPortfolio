@@ -34,8 +34,8 @@ export default function About() {
       </div>
 
       {/* Bottom row: Relevant Courses (centered) */}
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <div className="mini-card" style={{ maxWidth: "520px", width: "100%" }}>
+      <div className="mini-grid-full">
+        <div className="mini-card" style={{ maxWidth: "1000px", width: "100%" }}>
           <h3>Relevant Courses</h3>
           <ul className="bullets">
             <li>Advanced Algorithms</li>
