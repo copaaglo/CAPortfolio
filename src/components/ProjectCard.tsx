@@ -8,11 +8,11 @@ export default function ProjectCard({ project }: Props) {
   return (
     <article className="card">
       {project.imageUrl && (
-        <div style={{ padding: '24px 24px 0 24px' }}>
+        <div style={{ padding: '0', borderRadius: '12px 12px 0 0', overflow: 'hidden', borderBottom: '1px solid var(--border)' }}>
           <img 
             src={project.imageUrl} 
             alt={project.title} 
-            style={{ width: '100%', borderRadius: '12px', border: '1px solid var(--border)', display: 'block' }} 
+            style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }} 
           />
         </div>
       )}
