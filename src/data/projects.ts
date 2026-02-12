@@ -35,6 +35,7 @@ export const projects: Project[] = [
       "Developing and finalizing a cross-platform mobile app using React Native, Expo, and Expo Router, enabling a swipe-based algorithm for restaurants powered by the user's real-time location.",
       "Implemented sign-up and gated sign-in flows using TypeScript, JavaScript, and Node.js-backed logic.",
     ],
+    imageUrl: "/images/restaurant/screenshot1.png",
   },
   {
     title: "Personal Portfolio Website",
