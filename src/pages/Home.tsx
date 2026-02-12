@@ -35,9 +35,9 @@ export default function Home() {
           <div className="mini-card">
             <h3>Professional Focus</h3>
             <p className="muted">
-              Building scalable automation tools and high-performance software
-              interfaces. Seeking roles in hardware-software integration and
-              full-stack engineering.
+              Building AI-powered internal workflows and high-performance software
+              interfaces. Seeking roles in full-stack engineering and software
+              development.
             </p>
           </div>
         </div>

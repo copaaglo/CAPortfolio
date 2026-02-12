@@ -18,7 +18,7 @@ export default function About() {
               Third-year Computer Engineering student at Toronto Metropolitan University
             </li>
             <li>Specializing in hardware, digital systems, and software development</li>
-            <li>Experience in project planning and community leadership (MUES)</li>
+            <li>Full-Stack Engineering Intern at ZB Media Group</li>
           </ul>
         </div>
 
