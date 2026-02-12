@@ -5,15 +5,35 @@ type Props = {
 };
 
 export default function ProjectCard({ project }: Props) {
+  const images = project.imageGallery || (project.imageUrl ? [project.imageUrl] : []);
+
   return (
     <article className="card">
-      {project.imageUrl && (
-        <div style={{ padding: '0', borderRadius: '12px 12px 0 0', overflow: 'hidden', borderBottom: '1px solid var(--border)' }}>
-          <img 
-            src={project.imageUrl} 
-            alt={project.title} 
-            style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }} 
-          />
+      {images.length > 0 && (
+        <div style={{ 
+          display: 'flex', 
+          gap: '12px', 
+          padding: '24px', 
+          background: 'rgba(255,255,255,0.02)',
+          borderBottom: '1px solid var(--border)',
+          justifyContent: 'center'
+        }}>
+          {images.map((img: string, idx: number) => (
+            <div key={idx} style={{ flex: 1, maxWidth: images.length > 1 ? '30%' : '100%' }}>
+              <img 
+                src={img} 
+                alt={`${project.title} screenshot ${idx + 1}`} 
+                style={{ 
+                  width: '100%', 
+                  height: 'auto', 
+                  borderRadius: '8px', 
+                  border: '1px solid var(--border)', 
+                  display: 'block',
+                  objectFit: 'contain'
+                }} 
+              />
+            </div>
+          ))}
         </div>
       )}
       <div className="card-body">
