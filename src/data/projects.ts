@@ -23,7 +23,7 @@ export const projects: Project[] = [
       "Implemented a real-time 'Tracked Events' dashboard allowing users to save and monitor specific event prices via a persistent frontend interface.",
       "Integrated geolocation-aware search features to filter event results by preferred cities and artist names seamlessly.",
     ],
-    liveUrl: "https://ticket-prices-web-scraper-dmd572qlt-conrado-aguilars-projects.vercel.app",
+    liveUrl: "https://ticket-prices-web-scraper.vercel.app",
     imageUrl: "/images/web-scraper-preview.png",
   },
   {
