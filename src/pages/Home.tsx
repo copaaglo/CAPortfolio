@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import ProjectCard from "../components/ProjectCard";
 import { projects } from "../data/projects";
 
 export default function Home() {
@@ -11,15 +10,15 @@ export default function Home() {
         <h1>Conrado Aguilar</h1>
 
         <p className="muted">
-          Computer Engineering student specializing in front-end
-          development and crafting high-performance, accessible web interfaces.
+          Computer Engineering Student at Toronto Metropolitan University |
+          Seeking for co-op opportunities in the software development field
         </p>
 
-        <div className="row">
-          <Link className="btn" to="/resume">
+        <div className="row center">
+          <Link className="btn btn-pill" to="/resume">
             View Resume
           </Link>
-          <Link className="btn btn-outline" to="/projects">
+          <Link className="btn btn-pill btn-pill-outline" to="/projects">
             Explore Projects
           </Link>
         </div>
@@ -28,16 +27,17 @@ export default function Home() {
           <div className="mini-card">
             <h3>Core Competencies</h3>
             <p className="muted">
-              Advanced React patterns, TypeScript architecture, and modern 
-              design systems that scale with user needs.
+              Full-stack development with Python, React, and Node.js. Expertise
+              in hardware-level programming (VHDL) and digital systems design.
             </p>
           </div>
 
           <div className="mini-card">
             <h3>Professional Focus</h3>
             <p className="muted">
-              Seeking engineering roles where I can contribute to 
-              complex product challenges and user-centric features.
+              Building AI-powered internal workflows and high-performance software
+              interfaces. Seeking roles in full-stack engineering and software
+              development.
             </p>
           </div>
         </div>
@@ -52,7 +52,19 @@ export default function Home() {
 
       <div className="grid">
         {featuredProjects.map((project) => (
-          <ProjectCard key={project.title} project={project} />
+          <div key={project.title} className="card project-preview">
+            <h3>{project.title}</h3>
+            <p className="muted" style={{ fontSize: '0.95rem', margin: '16px 0' }}>
+              {project.summary || project.description}
+            </p>
+            <div className="pill-row" style={{ marginBottom: '24px' }}>
+              {project.tech.slice(0, 3).map(t => <span key={t} className="pill">{t}</span>)}
+              {project.tech.length > 3 && <span className="pill">+{project.tech.length - 3}</span>}
+            </div>
+            <Link to="/projects" className="link" style={{ fontSize: '0.85rem' }}>
+              Learn more →
+            </Link>
+          </div>
         ))}
       </div>
     </section>
